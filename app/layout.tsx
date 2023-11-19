@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import ThemeRegistry from "./ThemeRegistry"
 
 export const metadata: Metadata = {
   title: "Jugenklub Buttlar",
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeRegistry options={{ key: "mui" }}>{children}</ThemeRegistry>
+      </body>
     </html>
   )
 }
