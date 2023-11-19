@@ -2,7 +2,7 @@ import { Paper, Typography } from "@mui/material"
 
 export const Header = () => {
   return (
-    <Paper square sx={{ top: 0, position: "fixed", width: "100%" }}>
+    <Paper square>
       <Typography
         variant="h2"
         color="white"
